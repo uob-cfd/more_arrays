@@ -8,8 +8,7 @@ test = {
           'code': r"""
           >>> difference_from_expected.size
           272
-          >>> difference_from_expected.item(271) == abs(60 * 272 - sum(waiting_times))
-          True
+          >>> assert difference_from_expected.item(271) == abs(60 * 272 - sum(waiting_times))
           """,
           'hidden': False,
           'locked': False

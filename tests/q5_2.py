@@ -7,8 +7,7 @@ test = {
         {
           'code': r"""
           >>> # The decrease should be a positive number.
-          >>> biggest_decrease > 0
-          True
+          >>> assert biggest_decrease > 0
           """,
           'hidden': False,
           'locked': False
@@ -16,8 +15,7 @@ test = {
         {
           'code': r"""
           >>> # Hint: biggest decrease is above 30, but not 47.
-          >>> 30 <= biggest_decrease < 47
-          True
+          >>> assert 30 <= biggest_decrease < 47
           """,
           'hidden': False,
           'locked': False

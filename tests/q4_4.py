@@ -8,8 +8,7 @@ test = {
           'code': r"""
           >>> # It looks like you multipied and subtracted in the wrong
           >>> # order.
-          >>> sum(celsius_max_temperatures) != 356705.0
-          True
+          >>> assert sum(celsius_max_temperatures) != 356705.0
           """,
           'hidden': False,
           'locked': False
@@ -18,16 +17,14 @@ test = {
           'code': r"""
           >>> # Did you remember to round to the nearest integer?
           >>> total = sum(celsius_max_temperatures)
-          >>> (np.round(total) - total) == 0
-          True
+          >>> assert (np.round(total) - total) == 0
           """,
           'hidden': False,
           'locked': False
         },
         {
           'code': r"""
-          >>> sum(celsius_max_temperatures)
-          1280677.0
+          >>> assert sum(celsius_max_temperatures) == 1280677.0
           """,
           'hidden': False,
           'locked': False

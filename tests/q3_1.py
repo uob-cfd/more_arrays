@@ -9,10 +9,8 @@ test = {
           >>> # It looks like you wrote:
           >>> #   some_numbers.item(3)
           >>> # But the third element has index 2, not 3.
-          >>> third_element != -10
-          True
-          >>> third_element
-          -6
+          >>> assert third_element != -10
+          >>> assert third_element == -6
           """,
           'hidden': False,
           'locked': False

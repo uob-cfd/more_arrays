@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> np.allclose(fixed_products, [66234, 6661248, 669001248, -394250])
-          True
+          >>> assert np.allclose(fixed_products, [66234, 6661248, 669001248, -394250])
           """,
           'hidden': False,
           'locked': False

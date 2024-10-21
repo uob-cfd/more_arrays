@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> most_recent_birth_year
-          1917
+          >>> assert most_recent_birth_year == 1917
           """,
           'hidden': False,
           'locked': False

@@ -7,8 +7,7 @@ test = {
         {
           'code': r"""
           >>> # Hint: shortest is a number between 40 and 50.
-          >>> 40 <= shortest <= 50
-          True
+          >>> assert 40 <= shortest <= 50
           """,
           'hidden': False,
           'locked': False
@@ -16,8 +15,7 @@ test = {
         {
           'code': r"""
           >>> # Hint: longest is a number between 70 and 130.
-          >>> 70 <= longest <= 130
-          True
+          >>> assert 70 <= longest <= 130
           """,
           'hidden': False,
           'locked': False
@@ -25,8 +23,7 @@ test = {
         {
           'code': r"""
           >>> # Hint: the average is between the shortest and the longest
-          >>> shortest <= average <= longest
-          True
+          >>> assert shortest <= average <= longest
           """,
           'hidden': False,
           'locked': False
