@@ -6,8 +6,7 @@ test = {
       'cases': [
         {
           'code': r"""
-          >>> difference_from_expected.size
-          272
+          >>> assert difference_from_expected.size == 272
           >>> assert difference_from_expected.item(271) == abs(60 * 272 - sum(waiting_times))
           """,
           'hidden': False,

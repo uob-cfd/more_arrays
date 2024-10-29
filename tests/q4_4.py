@@ -31,10 +31,8 @@ test = {
         },
         {
           'code': r"""
-          >>> len(celsius_max_temperatures)
-          65000
-          >>> celsius_max_temperatures.item(2003)
-          20.0
+          >>> assert len(celsius_max_temperatures) == 65000
+          >>> assert celsius_max_temperatures.item(2003) == 20.0
           """,
           'hidden': False,
           'locked': False
